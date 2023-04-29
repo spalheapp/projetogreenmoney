@@ -1,0 +1,53 @@
+nav{
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavLink{
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.NavLink:hover{
+    color: #000;
+    background: #fff;
+    text-shadow: 0 0 30px var(--corPrincipal);
+    transition: .8s;
+}
+
+.Acessar{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background: var(--corPrincipal);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid transparent;
+
+    transition: .8s;
+}
+
+.Acessar:hover{
+    box-shadow: 0 0 20px var(--corPrincipal);
+}
+
+.NavLink, .Acessar{
+    margin: 10px;
+}
+
+@media (max-width:820px){
+    nav{
+        justify-content: space-around;
+    }
+}
+
+@media(max-width: 500px){
+    .NavLink{
+        display: none;
+    }
+}

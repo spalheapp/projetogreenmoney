@@ -1,0 +1,67 @@
+#duvidas {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 180px;
+}
+
+.duvidastxt {
+  text-align: center;
+
+}
+.duvidastxt h1{
+    font-size: 30px;
+
+    margin-top: 100px;
+}
+
+.cards{
+    margin-top: 90px;
+
+    width: 700px;
+
+    border: 1px solid var(--corPrincipal);
+    border-radius: 10px;
+}
+
+details{
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--corPrincipal);
+    color: #000;
+    outline: 0;
+}
+
+summary{
+    outline: 0;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+details p{
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: var(--corPrincipal);
+}@media(max-width:820px){
+    #duvidas{
+        max-width: 650px;
+    }
+    details{
+        max-width: 650px;
+    }
+}
+
+@media(max-width:500px){
+    .cards{
+        margin-left: 50px;
+        margin-right: 50px;
+
+        max-width: 350px;
+    }
+
+}
