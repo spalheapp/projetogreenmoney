@@ -1,83 +1,217 @@
-#planos {
+#planos{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-}
-
-.planosHeader {
   text-align: center;
+  background: #D3D7E8;
+  padding-bottom: 60px;
+
+
 }
 
-.planosHeader h1 {
-  font-size: 30px;
-  margin-top: 100px;
+#planos-header{
+  margin: 60px;
 }
 
-.planos {
+#planos-header p, #planos-header h1{
+  font-size: 32px;
+  color: #1F2855;
+}
+
+.planos{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 800px;
+  align-items: center;
+  justify-content: center;
 }
 
-.card {
-  text-align: center;
-  margin-top: 90px;
-  background: #fff;
-  width: 300px;
-  height: 400px;
+@media(max-width: 1557px){
+  .planos{
+    flex-wrap: wrap;
+  }
+}
 
+.card{
+  width: 350px;
+  height: 825px;
+  background: #fff;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+.blue{
+  width: 350px;
+  height: 825px;
+  background: #0A1039;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+
+.oferta{
+    
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-
-  box-shadow: 0 0 30px var(--corPrincipal);
-
-  border-radius: 10px;
-}
-
-.card .bttnComecar {
-  display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin-top: 42px;
+  margin-bottom: 16px;
 }
-.card a {
-  background: var(--corPrincipal);
-  padding: 10px;
-  width: 200px;
-  text-decoration: none;
-  color: #060707;
+.oferta  div{
+
+  background: #C02323;
+  color: #fff;
+  padding: 6px;
   border-radius: 5px;
 }
+.card-header, .card-header-white{
+  margin-bottom: 16px;
 
-.card a:hover{
-    box-shadow: 0 0 20px var(--corPrincipal);
-    transition: .8s;
 }
 
-.cardDivision{
-    width: 250px;
-    border-color: var(--corPrincipal);
-}
-.lines{
-    opacity: 20%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.card-header-white{
+  margin-top: 44px;
 }
 
-@media(max-width:820px){
-  .planos{
-    max-width: 650px;
-  }
-}
-@media(max-width:500px){
-  .planos{
-    flex-direction: column;
-    align-items: center;
 
-    max-width: 350px;
-  }
+
+.card-header h1{
+  font-size: 32px;
+  color: #D3D7E8;
 }
+.card-header p{
+  font-size: 16px;
+  color: #D3D7E8;
+  margin-bottom: 24px;
+}
+
+.card-header-white h1{
+  font-size: 32px;
+  color: #334281;
+}
+
+.card-header-white p{
+  font-size: 16px;
+  color: #334281;
+  margin-bottom: 24px ;
+  font-weight: bold;
+}
+
+.real-price{
+  color: #C02323;
+  text-decoration: line-through;
+}
+.atual-price{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: end;
+  color: var(--corPrincipal);
+  font-weight: bold;
+}
+.atual-price h1{
+  font-size: 54px;
+}
+.price-vista{
+  color: #D3D7E8;
+  margin-top: 6px;
+}
+.price-vista-white{
+  margin-top: 6px;
+  color: #334281;
+  font-weight: bold;
+}
+
+.lines, .lines p{
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.includes{
+    color: #F57E20;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 36px;
+
+}
+
+
+.services-blue li{
+  margin-top: 24px;
+  margin-left: 36px;
+  margin-right: 24px;
+  text-align: left;
+
+  list-style-type: none;
+  color: #d3d3d3;
+  border-bottom: 1px solid #3C3C3C;
+
+  padding-bottom: 12px;
+
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.services-blue img{
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.services-white li{
+  margin-top: 24px;
+  margin-left: 36px;
+  margin-right: 24px;
+  text-align: left;
+
+  list-style-type: none;
+  color: #334281;
+  border-bottom: 1px solid #e2e2e2;
+
+  padding-bottom: 12px;
+
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+
+.blue .button-assinar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 48px;
+}
+
+.white .button-assinar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 84px;
+}
+.button-assinar a{
+  background-color: #2C50ED;
+  border-radius: 7px 7px 7px 7px;
+  box-shadow: 0px 0px 37px 0px rgba(44.000000000000036, 79.99999999999999, 236.99999999999997, 0.63);
+  padding: 20px 35px 20px 35px;
+  
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button-assinar a:hover{
+  background: var(--corPrincipal);
+  box-shadow: 0px 0px 37px 0px var(--corPrincipal);
+}
+
+
+
+
+
